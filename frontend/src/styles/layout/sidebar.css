@@ -1,0 +1,45 @@
+.sidebar {
+  width: 260px;
+  background-color: white;
+  border-right: 1px solid #e2e8f0;
+  padding: 1rem;
+  position: fixed;
+  top: 60px; /* height of the header */
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+
+body.dark-mode .sidebar {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: var(--accent);
+}

@@ -1,0 +1,39 @@
+# Node.js / React
+node_modules/
+build/
+dist/
+.env
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+
+# React Editor files
+.DS_Store
+*.log
+
+# Python / Flask
+__pycache__/
+*.pyc
+instance/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+venv/
+env/
+.env
+.env.*
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+Thumbs.db
+Desktop.ini
+
+# Git
+.git/

@@ -1,0 +1,25 @@
+:root {
+  --primary: #3498db;
+  --secondary: #2ecc71;
+  --accent: #9b59b6;
+  --light: #ecf0f1;
+  --dark: #34495e;
+  --danger: #e74c3c;
+  --warning: #f39c12;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-radius: 8px;
+  --transition: all 0.3s ease;
+  --text: #374151;
+  --muted: #6b7280;
+  --success: #10b981;
+  --bg: #f5f7fa;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+} 

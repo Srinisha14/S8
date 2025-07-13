@@ -1,0 +1,162 @@
+/* General Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout-body {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px); /* subtract header height */
+}
+
+.sidebar {
+  width: 220px;
+  background-color: white;
+  border-right: 1px solid #e2e8f0;
+  padding: 1rem;
+  position: fixed;
+  top: 70px; /* height of the header */
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+body.dark-mode .sidebar {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: var(--accent);
+}
+
+/* Header styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #9b59b6;
+}
+
+.menu-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* RIGHT SECTION */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;             /* ✅ Ensure spacing between items */
+}
+
+.header-right button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Profile section with avatar and name */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;              /* ✅ Gap between avatar and username */
+}
+
+/* Avatar styling */
+.profile-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+.header-search {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 200px;
+  margin-right: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.header-search:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 0 2px rgba(155, 89, 182, 0.2);
+}
+
+
+/* Username next to avatar */
+.username {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;         /* ✅ Prevent wrap */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;            /* ✅ Adjust if needed */
+}
+
+
+
+/* Content spacing */
+.app-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  margin-top: 60px; /* height of the header */
+  margin-left: 260px; /* width of the sidebar */
+  height: calc(100vh - 60px);
+}

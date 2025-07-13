@@ -1,0 +1,131 @@
+/* ===================== */
+/* 📁 styles/components/questionnaire.css */
+/* ===================== */
+
+.questionnaire-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.questionnaire-modal {
+  background-color: white;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  z-index: 1001;
+  position: relative;
+}
+
+.questionnaire-modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.questionnaire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.questionnaire-form label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.questionnaire-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.questionnaire-form button[type="submit"] {
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+.recommendation-results {
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.recommendation-results h3 {
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.recommendation-results .course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px 30px;
+}
+
+.recommendation-results .course-card {
+  background-color: white;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+}
+
+.recommendation-results .course-header {
+  margin-bottom: 1rem;
+}
+
+.recommendation-results .course-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.recommendation-results .course-category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.recommendation-results .course-description {
+  font-size: 14px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.recommendation-results .course-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Match card width and spacing with homepage */
+.recommendation-results .course-grid .course-card,
+.recommendations-page .course-grid .course-card {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.recommendations-page .course-grid {
+  justify-content: center;
+  gap: 60px 60px;
+}

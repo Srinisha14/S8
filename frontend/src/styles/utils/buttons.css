@@ -1,0 +1,57 @@
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #2980b9);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2980b9, #2471a3);
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.menu-button {
+  position: static;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 300;
+  font-size: 1.5rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content.full + .menu-button {
+  left: 1rem;
+}

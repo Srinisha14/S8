@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 150;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content,
+  .main-content.full {
+    margin-left: 0 !important;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
