@@ -32,7 +32,7 @@ A full-stack web application that recommends personalized curriculum paths for s
 - Python 3
 - MongoDB
 
-### 1. Clone the repo
+1. Clone the repo
 
 ```bash
 git clone https://github.com/Srinisha14/S8.git
