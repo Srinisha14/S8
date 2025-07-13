@@ -40,6 +40,7 @@ cd S8-main
 
 2. Setup Backend
 
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate   # or source venv/bin/activate (Mac/Linux)
@@ -47,11 +48,12 @@ pip install -r requirements.txt
 python app.py
 
 3. Setup Frontend
-cd backend
-python -m venv venv
-venv\Scripts\activate   # or source venv/bin/activate (Mac/Linux)
-pip install -r requirements.txt
-python app.py
+
+```bash
+cd frontend
+npm install
+npm start
+
 
 
 
