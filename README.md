@@ -34,13 +34,12 @@ A full-stack web application that recommends personalized curriculum paths for s
 
 1. Clone the repo
 
-```bash
 git clone https://github.com/Srinisha14/S8.git
 cd S8-main
 
 2. Setup Backend
 
-```bash
+
 cd backend
 python -m venv venv
 venv\Scripts\activate   # or source venv/bin/activate (Mac/Linux)
@@ -49,7 +48,6 @@ python app.py
 
 3. Setup Frontend
 
-```bash
 cd frontend
 npm install
 npm start
